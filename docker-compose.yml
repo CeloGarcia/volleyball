@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  volleyball-app:
+    build: .
+    command: yarn start
+    ports:
+      - "3001:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - WATCHPACK_POLLING=true
+    # develop:
+    #   watch:
+    #     - action: sync
+    #       path: ./app
+    #       target: /src/app
+    #       ignore:
+    #         - node_modules/
+    #     - action: rebuild
+    #       path: package.json

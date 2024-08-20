@@ -21,10 +21,10 @@ const PlayerRow: React.FC<{ player: Player }> = ({ player }) => (
         {/* {player.skills.defense} */}
     </td>
     <td>
-        {/* {player.skills.attack} */}
+        {player.skills.attack}
     </td>
     <td>
-        {/* {player.skills.block} */}
+        {player.skills.block}
     </td>
   </tr>
 );

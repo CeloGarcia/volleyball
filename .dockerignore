@@ -1,0 +1,10 @@
+node_modules
+build
+.git
+.gitignore
+.dockerignore
+Dockerfile
+Dockerfile.prod
+docker-compose.yml
+# yarn.lock
+# package.json
